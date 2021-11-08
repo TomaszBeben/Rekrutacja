@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const Context = React.createContext();
 
-export const GlobaState = () => {
+export const GlobalState = () => {
     return useContext(Context)
 };
 
@@ -18,6 +18,8 @@ export const ContextComponent = ({ children }) => {
           url: url,
         }).then(res => {
           setUsers(res.data)
+        }).catch(e => {
+          console.error(e.message);
         })
       }, []);
 

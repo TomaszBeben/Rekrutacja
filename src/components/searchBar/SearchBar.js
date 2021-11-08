@@ -1,15 +1,16 @@
 import React from 'react'
-import { GlobaState } from '../../context/Context'
+import { GlobalState } from '../../context/Context'
 
 const SearchBar = () => {
-    const {setSearch} = GlobaState();
-    
+    const { setSearch } = GlobalState();
+
     return (
         <>
             <input
-                className='search-bar'
-                type="text"
-                placeholder='Search by '
+                data-testid= 'search-bar'
+                className= 'search-bar'
+                type= "text"
+                placeholder= 'Search by user name...'
                 onChange={(event) => setSearch(event.target.value)}
             />
         </>

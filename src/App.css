@@ -16,6 +16,8 @@
 
 .search-bar {
     width: 300px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .users-container {
@@ -37,5 +39,6 @@
 .users-header {
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 8px;
+    margin-top: 25px;
+    margin-bottom: 0;
 }
