@@ -5,7 +5,7 @@ import { GlobalState } from '../../context/Context';
 
 const Users = () => {
     const { users, search } = GlobalState();
-    
+
     return (
         <div data-testid='users'>
             {!users ?
