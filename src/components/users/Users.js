@@ -1,8 +1,6 @@
 import React from 'react';
 import { GlobalState } from '../../context/Context';
 
-
-
 const Users = () => {
     const { users, search } = GlobalState();
 

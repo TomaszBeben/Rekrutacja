@@ -9,7 +9,7 @@ body {
 }
 
 p {
-    margin: 0;
+    margin: 5px;
 }
 
 input {
@@ -18,5 +18,9 @@ input {
 
 ul li {
     list-style: none;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
+}
+
+li {
+    margin-right: 8px;
 }

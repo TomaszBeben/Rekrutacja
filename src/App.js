@@ -1,5 +1,6 @@
-import React,{ useEffect } from 'react';
-import axios from 'axios';
+import React, { useEffect } from 'react';
+import { fetchData } from './api/fetch';
+
 import { GlobalState } from './context/Context';
 
 import './App.css';
@@ -11,21 +12,14 @@ function App() {
   const { setUsers, url } = GlobalState()
 
   useEffect(() => {
-        axios({
-          method: 'GET',
-          url: url,
-        }).then(res => {
-          setUsers(res.data)
-        }).catch(e => {
-          console.error(e.message);
-        })
-      }, [setUsers, url]);
+    fetchData(url, setUsers)
+  }, [setUsers, url]);
 
   return (
     <div className='main-container'>
-      <Header/>
-      <SearchBar/>
-      <Users/>
+      <Header />
+      <SearchBar />
+      <Users />
     </div>
   );
 };
