@@ -55,14 +55,21 @@ Api are fetched by using axios library.
 Definition of axios function you can find in src/api/fetch.js (https://github.com/TomaszBeben/rekrutacja/blob/main/src/api/fetch.js).
 Axios takes data from api and put it to users state.
 
-### Header
+### [Header](https://github.com/TomaszBeben/rekrutacja/blob/main/src/components/header/Header.js)
 component shows header of application.
 
-### SearchBar
+### [SearchBar](https://github.com/TomaszBeben/rekrutacja/blob/main/src/components/searchBar/SearchBar.js)
 component is an input which take a value and put it to search state.
 
-### Users
+### [Users](https://github.com/TomaszBeben/rekrutacja/blob/main/src/components/users/Users.js)
 component takes information from user state.
 before app fetched data, Users component shows Loading... information.
 after app fetched data, Users component shows list of all users.
 after typing to search bar some data Users component filtering available users by name.
+
+### [Tests](https://github.com/TomaszBeben/rekrutacja/tree/main/src/__tests__)
+Are in tests folder
+Tests created with React Testing Library and Jest
+
+### Styles
+component styled by using css and flexbox.
