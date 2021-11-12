@@ -48,11 +48,11 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 As description says, app collecting data from api [https://jsonplaceholder.typicode.com/users] and renders only few keys, name and username.
 
 ### Variables
-All important variables and states are keep in src/Context.js (https://github.com/TomaszBeben/rekrutacja/blob/main/src/context/Context.js) file.
+All important variables and states are keep in src/[Context.js](https://github.com/TomaszBeben/rekrutacja/blob/main/src/context/Context.js) file.
 
 ### Api
 Api are fetched by using axios library.
-Definition of axios function you can find in src/api/fetch.js (https://github.com/TomaszBeben/rekrutacja/blob/main/src/api/fetch.js).
+Definition of axios function you can find in src/api/[fetch.js](https://github.com/TomaszBeben/rekrutacja/blob/main/src/api/fetch.js).
 Axios takes data from api and put it to users state.
 
 ### [Header](https://github.com/TomaszBeben/rekrutacja/blob/main/src/components/header/Header.js)
