@@ -6,7 +6,7 @@ import './users.css';
 
 const Users = () => {
     const { users, search } = GlobalState();
-
+    
     return (
         <div data-testid='users'>
             {!users ?
