@@ -8,32 +8,3 @@
     flex-direction: column;
     overflow: auto;
 }
-
-.search-bar {
-    width: 300px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-.users-container {
-    min-width: 250px;
-    display: flex;
-    flex-direction: row;
-}
-
-.users-second_plan_elem {
-    color: rgba(66, 68, 90, 0.4);
-}
-
-
-/*.users-first_plan_elem {
-    margin-left: 8px;
-    margin-right: 8px;
-} */
-
-.users-header {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 0;
-}

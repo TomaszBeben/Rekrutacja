@@ -1,5 +1,8 @@
-import React from 'react'
-import { GlobalState } from '../../context/Context'
+import React from 'react';
+
+import { GlobalState } from '../../context/Context';
+
+import './searchBar.css';
 
 const SearchBar = () => {
     const { setSearch } = GlobalState();
@@ -14,7 +17,7 @@ const SearchBar = () => {
                 onChange={(event) => setSearch(event.target.value)}
             />
         </>
-    )
-}
+    );
+};
 
-export default SearchBar
+export default SearchBar;

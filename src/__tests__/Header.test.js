@@ -1,7 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import Header from '../components/header/Header';
 
-test('renders app header', () => {
+test('that should render a header', () => {
+  render(<Header/>)
+  const HeaderElement = screen.getByRole('heading');
+  expect(HeaderElement).toBeInTheDocument();
+})
+
+test('renders correct text', () => {
     render(<Header />);
     const HeaderElement = screen.getByText(/Users list/);
     expect(HeaderElement).toBeInTheDocument();

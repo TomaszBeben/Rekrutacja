@@ -8,5 +8,5 @@ import axios from "axios";
       setState(res.data)
     }).catch(e => {
       console.error(e.message);
-    })
-  }
+    });
+  };

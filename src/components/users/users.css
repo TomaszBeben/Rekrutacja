@@ -1,0 +1,9 @@
+.users-container {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+}
+
+.users-second_plan_elem {
+    color: rgba(66, 68, 90, 0.4);
+}
